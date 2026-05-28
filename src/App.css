@@ -1,0 +1,42 @@
+.app-container {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: var(--cometchat-font-family);
+  background-color: var(--cometchat-background-color-01);
+  color: var(--cometchat-text-color-primary);
+}
+
+.login-title {
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.login-button-group {
+  display: flex;
+  gap: 20px;
+}
+
+.login-button {
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--cometchat-primary-color);
+  color: #ffffff;
+  font-weight: bold;
+  transition: opacity 0.2s ease;
+}
+
+.login-button:hover {
+  opacity: 0.9;
+}

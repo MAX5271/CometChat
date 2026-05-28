@@ -1,0 +1,101 @@
+.create-group-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.create-group-modal {
+  width: 480px;
+  height: 600px;
+  background-color: var(--cometchat-background-color-01, #fff);
+  border-radius: var(--cometchat-radius-2, 8px);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.create-group-header {
+  padding: 16px;
+  border-bottom: 1px solid var(--cometchat-border-color-light, #eee);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.create-group-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--cometchat-text-color-primary, #333);
+}
+
+.create-group-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--cometchat-text-color-secondary, #666);
+}
+
+.create-group-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.create-group-input-wrapper {
+  padding: 16px;
+  border-bottom: 1px solid var(--cometchat-border-color-light, #eee);
+}
+
+.create-group-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--cometchat-border-color-light, #ccc);
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: var(--cometchat-background-color-02, #fff);
+  color: var(--cometchat-text-color-primary, #333);
+}
+
+.create-group-users {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.create-group-footer {
+  padding: 16px;
+  border-top: 1px solid var(--cometchat-border-color-light, #eee);
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--cometchat-background-color-02, #fafafa);
+}
+
+.create-group-submit {
+  padding: 10px 20px;
+  background-color: var(--cometchat-primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.create-group-submit:hover {
+  opacity: 0.9;
+}
+
+.create-group-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
