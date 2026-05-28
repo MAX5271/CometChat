@@ -19,8 +19,8 @@ To run this project locally, you will need a CometChat account to generate the n
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/yourusername/cometchat-assessment.git](https://github.com/yourusername/cometchat-assessment.git)
-cd cometchat-assessment/frontend
+git clone https://github.com/MAX5271/CometChat.git
+cd CometChat/frontend
 ```
 2. Environment Variables
 Create a .env file in the root of the frontend directory and add your CometChat dashboard credentials:
